@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lighting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css"">
+</head>
+<body>
+<header id="home" class="header">
+    <div class="header__body">
+        <div class="container">
+            <div class="header__top-wrapper">
+                <div class="header__top top-header">
+                        <div class="top-header__logo">
+                            <a href="#"><img class="top-header__img" src="img/logo2.png" alt="logo"></a>
+                        </div>
+
+                        <!--  SIDE MENU  -->
+                        <!-- Burger -->
+                        <div class="top-header__burger">
+                            <span class="top-header__burger-item"></span>
+                        </div>
+
+                        <nav class="top-header__sidebar">
+                            <div class="top-header__backgray" onclick="closeMenu();"></div>
+                            <ul class="top-header__sidebar-list">
+                                <li><a class="top-header__sidebar-link" href="#home" onclick="closeMenu();">Home</a></li>
+                                <li><a class="top-header__sidebar-link" href="#wedo" onclick="closeMenu();">What we do</a></li>
+                                <li><a class="top-header__sidebar-link" href="#about" onclick="closeMenu();">About us</a></li>
+                                <li><a class="top-header__sidebar-link" href="#portfolio" onclick="closeMenu();">Portfolio</a></li>
+                                <li><a class="top-header__sidebar-link" href="#gallery" onclick="closeMenu();">Gallery</a></li>
+                                <li><a class="top-header__sidebar-link" href="#contact" onclick="closeMenu();">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <!--  SIDE MENU   -->
+
+                        <nav class="top-header__menu menu">
+                            <ul class="menu__list">
+                                <li><a class="menu__link" href="#home">Home</a></li>
+                                <li><a class="menu__link" href="#wedo">What we do</a></li>
+                                <li><a class="menu__link" href="#about">About us</a></li>
+                                <li><a class="menu__link" href="#portfolio">Portfolio</a></li>
+                                <li><a class="menu__link" href="#gallery">Gallery</a></li>
+                                <li><a class="menu__link" href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                </div> <!-- /.header__top top-header -->
+            </div>
+        </div> <!-- /.container -->
+
+        <div class="header__content">
+            <div class="header__block block-left">
+                <div class="block-left__body">
+                    <h3 class="block-left__suptitle">Studio</h3>
+                    <h2 class="block-left__title">Lighting</h2>
+                    <p class="block-left__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nisi ipsum rem dolores?</p>
+                    <button class="block-left__btn">New project</button>
+                </div>  
+            </div>
+            <div class="header__block block-right">
+                <div class="block-right__slider slider">
+                    <div class="slider__item">
+                        <img class="slider__img" src="img/slider1bw.jpg" alt="img">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="img/slider2bw.jpg" alt="img">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="img/slider3bw.jpg" alt="img">
+                    </div>
+                </div> <!-- /.block-right__slider slider -->
+            </div> <!-- /.header__block  block-right-->
+        </div> <!-- /.header__content -->
+    </div> <!-- /.header__body -->
+</header>
+
+<main class="main">
+
+        <!--  SECTION WHAT WE DO   -->
+    <section id="wedo" class="section__wedo">
+        <div class="container">
+            <div class="title__body body">
+                <div class="body__title">What we do</div>  
+                <div class="body__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, iusto hic.</div>  
+            </div>
+            
+            <div class="wedo__body wedo">
+                <div class="wedo__card card">
+                    <div class="card__title">Design</div>
+                    <div class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aut? Suscipit vero esse voluptate cumque.</div>
+                    <a class="card__link" href="#">More <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+                </div>
+                <div class="wedo__card card">
+                    <div class="card__title">Development</div>
+                    <div class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aut? Suscipit vero esse voluptate cumque.</div>
+                    <a class="card__link" href="#">More <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+                </div>
+                <div class="wedo__card card">
+                    <div class="card__title">Hosting</div>
+                    <div class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aut? Suscipit vero esse voluptate cumque.</div>
+                    <a class="card__link" href="#">More <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+                </div>
+                <div class="wedo__card card">
+                    <div class="card__title">Mobile</div>
+                    <div class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aut? Suscipit vero esse voluptate cumque.</div>
+                    <a class="card__link" href="#">More <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+                </div>
+                <div class="wedo__card card">
+                    <div class="card__title">SEO</div>
+                    <div class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aut? Suscipit vero esse voluptate cumque.</div>
+                    <a class="card__link" href="#">More <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+                </div>
+                <div class="wedo__card card">
+                    <div class="card__title">Marketing</div>
+                    <div class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aut? Suscipit vero esse voluptate cumque.</div>
+                    <a class="card__link" href="#">More <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!--  SECTION ABOUT   -->
+    <section id="about" class="section__about">
+        <div class="container">
+            <div class="about__body about">
+                <div class="about__block about-content">
+                    <div class="about-content__body">
+                        <div class="about__title">Acquaint Us</div>  
+                        <div class="about__subtitle">About Us</div>  
+                    </div>
+                    <div class="about-content__text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab veniam deleniti ipsum aliquam maiores nostrum rem, beatae ea et atque odio voluptates esse, eum eius. Iste minus mollitia rerum consequuntur
+                    </div>
+                    <div class="about-content__check checks">
+                        <ul class="checks__list">
+                            <li class="checks__item">
+                                <i class="checks__ico fas fa-check"></i>
+                                <span class="checks__text">Optimization</span>
+                            </li>
+                            <li class="checks__item">
+                                <i class="checks__ico fas fa-check"></i>
+                                <span class="checks__text">Loyalty</span>
+                            </li>
+                            <li class="checks__item">
+                                <i class="checks__ico fas fa-check"></i>
+                                <span class="checks__text">Guarantee</span>
+                            </li>
+                            <li class="checks__item">
+                                <i class="checks__ico fas fa-check"></i>
+                                <span class="checks__text">Responsability</span>
+                            </li>
+                            <li class="checks__item">
+                                <i class="checks__ico fas fa-check"></i>
+                                <span class="checks__text">Qualitatively</span>
+                            </li>
+                            <li class="checks__item">
+                                <i class="checks__ico fas fa-check"></i>
+                                <span class="checks__text">Flexibility</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about__block about-content">
+                    <video class="about-content__video" width="600" height="350" poster="img/video.jpg" controls>
+                        <source src="video/video.mp4" type="video/mp4">
+                        Video is not support, Sorry :(
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <!--  SECTION TEAM   -->
+    <section class="section__team">
+        <div class="container">
+            <div class="title__body body">
+                <div class="body__title">Meet the team</div>  
+                <div class="body__subtitle">We are talented people.</div>  
+            </div>
+
+            <div class="team__body team">
+                <div class="team__block team-content-first">
+                    <div class="team-content-first__name">Mathew Dixon</div>
+                    <div class="team-content-first__spec">Back-end Developer</div>
+                    <div class="team-content-first__about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus eligendi culpa iste, maiores non ad labore at explicabo laboriosam vitae ex id temporibus, minima perferendis minus rem omnis officia repellat voluptas assumenda voluptatem, necessitatibus quam ab! Totam perspiciatis rerum at impedit?</div>
+                    <div class="team-content-first__about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus eligendi culpa iste, maiores non ad labore at explicabo laboriosam vitae ex id temporibus, minima perferendis minus rem omnis officia repellat voluptas assumenda voluptatem, necessitatibus quam ab! Totam perspiciatis rerum at impedit?</div>
+                    <div class="team-content-first__link">
+                        Follow me:
+                        <a class="team-content-first__social" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="team-content-first__social" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="team-content-first__social" href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="team-content-first__social" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="team-content-first__social" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="team__block team-content__picture">
+                    <img class="team-content-first__img" src="img/talent1.jpg" alt="#">
+                </div>
+            </div> <!-- /.team__body team -->
+
+            <div class="team__body team">
+                <div class="team__block team-content-second">
+                    <div class="team-content-second__name">Margarett Jackson</div>
+                    <div class="team-content-second__spec">Branding/UX Design</div>
+                    <div class="team-content-second__about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus eligendi culpa iste, maiores non ad labore at explicabo laboriosam vitae ex id temporibus, minima perferendis minus rem omnis officia repellat voluptas assumenda voluptatem, necessitatibus quam ab! Totam perspiciatis rerum at impedit?</div>
+                    <div class="team-content-second__about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus eligendi culpa iste, maiores non ad labore at explicabo laboriosam vitae ex id temporibus, minima perferendis minus rem omnis officia repellat voluptas assumenda voluptatem, necessitatibus quam ab! Totam perspiciatis rerum at impedit?</div>
+                    <div class="team-content-second__link">
+                        Follow me:
+                        <a class="team-content-second__social" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="team-content-second__social" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a class="team-content-second__social" href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="team-content-second__social" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="team-content-second__social" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="team__block team-content__picture">
+                    <img class="team-content-second__img" src="img/talent2.jpg" alt="#">
+                </div>
+            </div> <!-- /.team__body team -->
+        </div>
+    </section>
+
+        <!--  SECTION WORK   -->
+    <section id="portfolio" class="section__work">
+        <div class="container">
+            <div class="title__body body">
+                <div class="body__title">Recent works</div>  
+                <div class="body__subtitle">We love what we do, check out some of our latest works</div>  
+            </div>
+
+            <div class="work__body work">
+                <div class="work__content content-work">
+                    <img class="content-work__img" src="img/works1.jpg" alt="#">
+                </div>
+                <div class="work__content content-work">
+                    <div class="content-work__title">First project</div>
+                    <div class="content-work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nisi dolores atque amet placeat error possimus quas saepe reprehenderit tempore eligendi, hic maiores labore neque nobis voluptas sed temporibus? Dignissimos incidunt consectetur quisquam officiis ullam minima iusto!</div>
+                    <a class="content-work__link">Visit website
+                        <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+
+                    <div class="client__card card-client">
+                        <div class="card-client__text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam enim inventore sapiente vero recusandae ab eveniet dignissimos, nesciunt eaque, similique architecto doloremque sed numquam sequi. Lorem ipsum dolor sit amet. "</div>
+                        <div class="card-client__footer card-footer">
+                            <div class="card-footer__avatar">
+                                <img class="card-footer__img" src="img/avatar1.jpg" alt="#">
+                            </div>
+                            <div class="card-footer__info">
+                                <div class="card-footer__name">Ethan Foreman </div>
+                                <div class="card-footer__spec">PHP & API developer</div>
+                            </div>
+                        </div>
+                    </div> <!-- /.client__card card-client -->
+                </div>
+            </div> <!-- /.work__body work -->
+
+            <div class="work__body work-reverse">
+                <div class="work__content content-work-reverse">
+                    <img class="content-work-reverse__img" src="img/works2.jpg" alt="#">
+                </div>
+                <div class="work__content content-work-reverse">
+                    <div class="content-work-reverse__title">Second project</div>
+                    <div class="content-work-reverse__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nisi dolores atque amet placeat error possimus quas saepe reprehenderit tempore eligendi, hic maiores labore neque nobis voluptas sed temporibus? Dignissimos incidunt consectetur quisquam officiis ullam minima iusto!</div>
+                    <a class="content-work-reverse__link">Visit website
+                        <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+
+                    <div class="client__card card-client">
+                        <div class="card-client__text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam enim inventore sapiente vero recusandae ab eveniet dignissimos, nesciunt eaque, similique architecto doloremque sed numquam sequi. Lorem ipsum dolor sit amet. "</div>
+                        <div class="card-client__footer card-footer">
+                            <div class="card-footer__avatar">
+                                <img class="card-footer__img" src="img/avatar2.jpg" alt="#">
+                            </div>
+                            <div class="card-footer__info">
+                                <div class="card-footer__name">Stella Matthews</div>
+                                <div class="card-footer__spec">Yii | Laravel</div>
+                            </div>
+                        </div>
+                    </div> <!-- /.client__card card-client -->
+                </div>
+            </div> <!-- /.work__body work -->
+
+            <div class="work__body work">
+                <div class="work__content content-work">
+                    <img class="content-work__img" src="img/works3.jpg" alt="#">
+                </div>
+                <div class="work__content content-work">
+                    <div class="content-work__title">Third project</div>
+                    <div class="content-work__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nisi dolores atque amet placeat error possimus quas saepe reprehenderit tempore eligendi, hic maiores labore neque nobis voluptas sed temporibus? Dignissimos incidunt consectetur quisquam officiis ullam minima iusto!</div>
+                    <a class="content-work__link">Visit website
+                        <i class="fas fa-arrow-right link-arrow"></i>
+                    </a>
+
+                    <div class="client__card card-client">
+                        <div class="card-client__text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam enim inventore sapiente vero recusandae ab eveniet dignissimos, nesciunt eaque, similique architecto doloremque sed numquam sequi. Lorem ipsum dolor sit amet. "</div>
+                        <div class="card-client__footer card-footer">
+                            <div class="card-footer__avatar">
+                                <img class="card-footer__img" src="img/avatar3.jpg" alt="#">
+                            </div>
+                            <div class="card-footer__info">
+                                <div class="card-footer__name">Dan Sheppard</div>
+                                <div class="card-footer__spec">iOS Developer</div>
+                            </div>
+                        </div>
+                    </div> <!-- /.client__card card-client -->
+                </div>
+            </div> <!-- /.work__body work -->
+        </div> <!-- /.container -->
+    </section>
+
+        <!--  SECTION COMMENTS   -->
+    <section class="section__client">
+        <div class="container">
+            <div class="title__body body-client">
+                <div class="body__title">Testimonials</div>  
+                <div class="body__subtitle">Our Client Sayings</div>  
+            </div>
+
+            <div class="client__body client">
+                <div class="client__card card-client">
+                    <div class="card-client__text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam enim inventore sapiente vero recusandae ab eveniet dignissimos, nesciunt eaque, similique architecto doloremque sed numquam sequi. Lorem ipsum dolor sit amet. "</div>
+                    <div class="card-client__footer card-footer">
+                        <div class="card-footer__avatar">
+                            <img class="card-footer__img" src="img/avatar1.jpg" alt="#">
+                        </div>
+                        <div class="card-footer__info">
+                            <div class="card-footer__name">Ethan Foreman </div>
+                            <div class="card-footer__spec">PHP & API developer</div>
+                        </div>
+                    </div>
+                </div> <!-- /.client__card card-client -->
+
+                <div class="client__card card-client">
+                    <div class="card-client__text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam enim inventore sapiente vero recusandae ab eveniet dignissimos, nesciunt eaque, similique architecto doloremque sed numquam sequi. Lorem ipsum dolor sit amet. "</div>
+                    <div class="card-client__footer card-footer">
+                        <div class="card-footer__avatar">
+                            <img class="card-footer__img" src="img/avatar2.jpg" alt="#">
+                        </div>
+                        <div class="card-footer__info">
+                            <div class="card-footer__name">Stella Matthews</div>
+                            <div class="card-footer__spec">Yii | Laravel</div>
+                        </div>
+                    </div>
+                </div> <!-- /.client__card card-client -->
+
+                <div class="client__card card-client">
+                    <div class="card-client__text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam enim inventore sapiente vero recusandae ab eveniet dignissimos, nesciunt eaque, similique architecto doloremque sed numquam sequi. Lorem ipsum dolor sit amet. "</div>
+                    <div class="card-client__footer card-footer">
+                        <div class="card-footer__avatar">
+                            <img class="card-footer__img" src="img/avatar3.jpg" alt="#">
+                        </div>
+                        <div class="card-footer__info">
+                            <div class="card-footer__name">Dan Sheppard</div>
+                            <div class="card-footer__spec">iOS Developer</div>
+                        </div>
+                    </div>
+                </div> <!-- /.client__card card-client -->
+
+                <div class="client__card card-client">
+                    <div class="card-client__text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam enim inventore sapiente vero recusandae ab eveniet dignissimos, nesciunt eaque, similique architecto doloremque sed numquam sequi. Lorem ipsum dolor sit amet. "</div>
+                    <div class="card-client__footer card-footer">
+                        <div class="card-footer__avatar">
+                            <img class="card-footer__img" src="img/avatar4.jpg" alt="#">
+                        </div>
+                        <div class="card-footer__info">
+                            <div class="card-footer__name">Ashley Black</div>
+                            <div class="card-footer__spec">Branding/UX Design</div>
+                        </div>
+                    </div>
+                </div> <!-- /.client__card card-client -->
+                
+            </div> <!-- /.client__body client -->
+        </div>
+    </section>
+
+        <!--  SECTION GALLERY   -->   
+    <div id="gallery" class="section__gallery">
+        <div class="container">
+            <div class="title__body body">
+                <div class="body__title">Photos</div>  
+                <div class="body__subtitle">Studio Gallery</div>  
+            </div>
+
+            <div class="gallery__body gallery-content">
+                <div class="gallery-content__wrapper-col">
+                    <div class="gallery-content__item">
+                        <a href="img/gallery1.jpg" data-fancybox="img"><img class="gallery-content__img" src="img/gallery1.jpg" alt="#"></a>
+                        <div class="gallery-content__ico">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-content__item">
+                        <a href="img/gallery2.jpg" data-fancybox="img"><img class="gallery-content__img" src="img/gallery2.jpg" alt="#"></a>
+                        <div class="gallery-content__ico">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-content__item">
+                        <a href="img/gallery3.jpg" data-fancybox="img"><img class="gallery-content__img" src="img/gallery3.jpg" alt="#"></a>
+                        <div class="gallery-content__ico">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-content__item">
+                        <a href="img/gallery4.jpg" data-fancybox="img"><img class="gallery-content__img" src="img/gallery4.jpg" alt="#"></a>
+                        <div class="gallery-content__ico">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-content__wrapper-col">
+                    <div class="gallery-content__item">
+                        <a href="img/gallery5.jpg" data-fancybox="img"><img class="gallery-content__img" src="img/gallery5.jpg" alt="#"></a>
+                        <div class="gallery-content__ico">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-content__item">
+                        <a href="img/gallery6.jpg" data-fancybox="img"><img class="gallery-content__img" src="img/gallery6.jpg" alt="#"></a>
+                        <div class="gallery-content__ico">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-content__item">
+                        <a href="img/gallery7.jpg" data-fancybox="img"><img class="gallery-content__img" src="img/gallery7.jpg" alt="#"></a>
+                        <div class="gallery-content__ico">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-content__wrapper-col d-none">
+                    <div class="gallery-content__item">
+                        <a href="img/gallery8.jpg" data-fancybox="img"><img class="gallery-content__img" src="img/gallery8.jpg" alt="#"></a>
+                        <div class="gallery-content__ico">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-content__item">
+                        <a href="img/gallery9.jpg" data-fancybox="img"><img class="gallery-content__img" src="img/gallery9.jpg" alt="#"></a>
+                        <div class="gallery-content__ico">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-content__item">
+                        <a href="/img/gallery10.jpg" data-fancybox="img"><img class="gallery-content__img" src="img/gallery10.jpg" alt="#"></a>
+                        <div class="gallery-content__ico">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-content__item">
+                        <a href="img/gallery11.jpg" data-fancybox="img"><img class="gallery-content__img" src="img/gallery11.jpg" alt="#"></a>
+                        <div class="gallery-content__ico">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+        <!--  SECTION CONTACT   -->  
+    <section id="contact" class="section__contact">
+        <div class="container">
+            <div class="title__body body-cont">
+                <div class="body__title">Get in touch</div>  
+                <div class="body__subtitle">Contact Us</div>  
+            </div>
+
+            <div class="contact__body body-contact">
+                <div class="body-contact__wrapper">
+                    <div class="body-contact__ico">
+                        <i class="far fa-envelope-open"></i>
+                    </div>
+                    <div class="body-contact__name">
+                        <input class="body-contact__first" placeholder="Enter your first name"></input>
+                        <input class="body-contact__last" placeholder="Enter your last name"></input>
+                    </div>
+                    <input class="body-contact__email" placeholder="Enter your email"></input>
+                    <textarea class="body-contact__text" placeholder="Enter your message"></textarea>
+                    <a href="#"></a><button class="body-contact__btn">Send message</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__body">
+        <div class="footer__info">
+            <div class="footer__contact contact-footer">
+                <div class="contact-footer__title">Contact Information</div>
+                <div class="contact-footer__item">
+                    <div class="contact-footer__item-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="contact-footer__item-info">
+                        <div class="contact-footer__item-title">Adress</div>
+                        375 Street Name, City, USA
+                    </div>
+                </div>
+                <div class="contact-footer__item">
+                    <div class="contact-footer__item-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-footer__item-info">
+                        <div class="contact-footer__item-title">Phone</div>
+                        +1 963 548 447
+                    </div>
+                </div>
+                <div class="contact-footer__item">
+                    <div class="contact-footer__item-icon">
+                        <i class="far fa-envelope"></i>
+                    </div>
+                    <div class="contact-footer__item-info">
+                        <div class="contact-footer__item-title">Email</div>
+                        mail@example.com
+                    </div>
+                    
+                </div>
+                <div class="contact-footer__item">
+                    <div class="contact-footer__item-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="contact-footer__item-info">
+                        <div class="contact-footer__item-title">Follow us:</div>
+                        <a class="contact-footer__social" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="contact-footer__social" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="contact-footer__social" href="https://twitter.com/" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="contact-footer__social" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="contact-footer__social" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__nav nav-footer">
+                <div class="nav-footer__title">Navigation</div>
+                <nav class="nav-footer__menu">
+                    <a href="#home" class="nav-footer__link">Home</a>
+                    <a href="#wedo" class="nav-footer__link">What we do</a>
+                    <a href="#about" class="nav-footer__link">About us</a>
+                    <a href="#portfolio" class="nav-footer__link">Portfolio</a>
+                    <a href="#gallery" class="nav-footer__link">Gallery</a>
+                    <a href="#contact" class="nav-footer__link">Contact</a>
+                </nav>
+            </div>
+            <div class="footer__help help-footer">
+                <div class="help-footer__title">Helpful Links</div>
+                <nav class="help-footer__menu">
+                    <a class="help-footer__link" href="#">Services</a>
+                    <a class="help-footer__link" href="#">Support</a>
+                    <a class="help-footer__link" href="#">Terms & Condition</a>
+                    <a class="help-footer__link" href="#">Privacy Policy</a>
+                </nav>
+            </div>
+            <div class="footer__logo">
+                <img class="footer__logo-img" src="img/logo2.png" alt="#">
+            </div>
+        </div> <!-- /.footer__info -->
+
+        <div class="copyright">Made with <i class="fas fa-heart" aria-hidden="true"></i> & <i class="fas fa-mug-hot" aria-hidden="true"></i> by <span class="copyright__name">vS</span>
+        </div>
+    </div> <!-- /.footer__body -->
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/slick.min.js""></script>
+<script src="js/jquery.js"></script>
+<script src="js/script-dist.js"></script>
+</body>
+</html>
